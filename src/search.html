@@ -8,24 +8,26 @@
 </head>
 <body>
 	<header>
-		<div class="logo">
+		<div>
 			<h1><a href="./index.html">Legend</a></h1>
 		</div>
 		<nav>
 			<ul>
 				<li><a href="./about.html">About</a></li>
 				<li><a href="./contact.html">Contact</a></li>
+				<li><a href="./admin-login.html">Admin Login</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<section id="search-box">
+		<section>
 			<form action="" method="POST">
+				<label for="search-argument">Search Here</label>
 				<input type="text" name="searchArgument" id="search-argument" placeholder="Search Books">
 				<input type="submit" name="submit" value="Search">
 			</form>
 		</section>
-		<section id="search-results">
+		<section>
 			<div>
 				<h2>Filtering Options:</h2>
 				<ul>
@@ -34,15 +36,27 @@
 					<li><a href="#">Most Popular</a></li>
 				</ul>
 			</div>
-			<table class="results">
-				<tr>
-					<td><a href="./description-checkout.html">Atomic Habits</a></td>
-					<td>James Clear</td>
-					<td>Personal Developement</td>
-					<td>ETB200</td>
-				</tr>
-			</table>
-			<div class="page-navigation">
+			<div>
+				<table>
+					<thead>
+						<th>Book Name</th>
+						<th>Writer Name</th>
+						<th>Category</th>
+						<th>Price</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="./description-checkout.html">Atomic Habits</a></td>
+							<td>James Clear</td>
+							<td>Personal Developement</td>
+							<td>ETB200</td>
+						</tr>
+					</tbody>
+					
+				</table>
+			</div>
+				
+			<div>
 				<h3>Page:</h3>
 				<ul>
 					<li><a href="#">1</a></li>
@@ -55,25 +69,24 @@
 		</section>
 	</main>
 	<footer>
-		<div class="logo">
+		<div>
 			<h3>Logo</h3>
 		</div>
-		<div class="addresses">
+		<div>
 			<h3>Our Adresses</h3>
 			<ul>
-				<li><a href="#">Adress 1</a></li>
-				<li><a href="#">Adress 2</a></li>
-				<li><a href="#">Adress 3</a></li>
-				<li><a href="#">Adress 4</a></li>
+				<li>Bisrate Gabriel / Nfas Silk Lafto Subcity</li>
+				<li>4 Kilo / Arada Subcity</li>
+				<li>6 Kilo / Gulele Subcity</li>
 			</ul>
 		</div>
-		<div class="addresses">
+		<div>
 			<h3>Our Socials</h3>
 			<ul>
-				<li><a href="#">Social 1</a></li>
-				<li><a href="#">Social 2</a></li>
-				<li><a href="#">Social 3</a></li>
-				<li><a href="#">Social 4</a></li>
+				<li><a href="#">FaceBook</a></li>
+				<li><a href="#">LinkedIn</a></li>
+				<li><a href="#">Instagram</a></li>
+				<li><a href="#">Twitter</a></li>
 			</ul>
 		</div>
 	</footer>

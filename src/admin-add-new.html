@@ -8,27 +8,32 @@
 </head>
 <body>
 	<header>
-		<div class="logo">
+		<div>
 			<h1><a href="./index.html">Legend</a></h1>
 		</div>
 		<nav>
 			<ul>
 				<li><a href="./about.html">About</a></li>
 				<li><a href="./contact.html">Contact</a></li>
+				<li><a href="./admin-login.html">Admin Login</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<section id="login-form">
+		<section>
 			<h2>Add New Books</h2>
 			<form action="">
+				<label for="book-name">Book Name</label>
 				<input type="text" name="bookName" id="book-name">
+				<label for="author-name">Author Name</label>
 				<input type="text" name="authorName" id="author-name">
+				<label for="isbn">ISBN</label>
 				<input type="text" name="isbn" id="isbn">
-				<input type="text" name="authorName" id="author-name">
-				<input type="text" name="authorName" id="author-name">
-				<input type="text" name="authorName" id="author-name">
-				<input type="submit" name="submit" value="Add!">
+				<label for="book-cover">Book Cover</label>
+				<input type="image" name="authorName" id="book-cover" alt="image">
+				<label for="price">Price</label>
+				<input type="text" name="authorName" id="price">
+				<input type="submit" name="submit" alt="a form to add a new book" value="Add!">
 			</form>
 		</section>
 	</main>
