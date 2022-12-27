@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home</title>
+	<meta name="description" content="Atomic habit at Legend Books">
+	<title>Atomic Habits</title>
 </head>
 <body>
 	<header>
@@ -20,42 +21,46 @@
 	<main>
 		<section id="book-image-description">
 			<div>
-				<h2>Book Name</h2>
+				<h2>Atomic Habits</h2>
 			</div>
 			<div>
-				<img src="./images/image-placeholder.webp" alt="dummy book title page">
+				<img src="./images/atomic-habits-book-cover.webp" alt="dummy book title page">
 			</div>
 			<div>
 				<h3>Description:</h3>
 				<ul>
-					<li>Book Name:</li>
-					<li>Writer Name:</li>
-					<li>Category:</li>
-					<li>Synopsys:</li>
-					<li>Background Story:</li>
-					<li></li>
-					<li>Price:</li>
+					<li>Book Name: <span>Atomic Habits</span></li>
+					<li>Writer Name: <span>James Clear</span></li>
+					<li>Category: <span>Personal Developement</span></li>
+					<li>Background Story: <blockquote cite="https://books.google.com.et/books/about/Atomic_Habits_An_Easy_Proven_Way_to_Buil.html?id=T929zgEACAAJ&source=kp_book_description&redir_esc=y">James Clear, an expert on habit formation, reveals practical strategies that will teach you how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results. He draws on proven ideas from biology, psychology, and neuroscience to create an easy-to-understand guide for making good habits inevitable and bad habits impossible.</blockquote></li>
+					<li>Example Quote: <span>Time magnifies the margin between success and failure. It will multiply whatever you feed it. Good habits make time your ally. Bad habits make time your enemy.</span></li>
+					<li>Price: <span>ETB200</span></li>
 				</ul>
-				<p class="summary">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius sit tempora distinctio, sapiente et voluptatibus repudiandae, ut obcaecati iste magni quos molestias. Vero sapiente ducimus accusantium et rem esse excepturi.
+				<p>
+					Learn about the easy and proven way to build good habits and break the bad ones. What’s a habit? If someone were to ask you about your daily habits, you might need some time to think about them. That’s because a habit, by definition, is an act that you perform automatically by instinct. Like when you walk into a dark room, you instinctively turn on a light switch, right? Habits are actions you don’t even have to think about, which is why you might not realize how a small daily action can have a powerful effect on your life. If you’re saving a dollar a day or smoking a cigarette a day, these actions may not seem like much now, but twenty years from now, those habits can either make you rich or, unfortunately, kill you. That’s why it’s important to understand how habits are formed, so you can learn how to kick the bad habits, implement the healthy ones, and take back control of your life.
 				</p>
 			</div>
 		</section>
 		<section id="audio-description">
-			<audio src="music.mp3" alt="Audio description for the book book name"></audio>
+			<audio controls>
+				<source src="./audios/atomic-habits-short-description.mp3" type="audio/ogg">
+			  </audio>
+			<a href="./audios/atomic-habits-audio-summary-transcript.txt">Transcript</a>
 		</section>
 		<section id="checkout-form">
 			<h2>Want to buy the item?</h2>
 			<form action="" method="POST">
-				<label for="first-name">First Name:</label>
-				<input type="text" name="firstName" id="first-name">
+				<label for="first-name">First Name *</label>
+				<input type="text" name="firstName" id="first-name" required>
 				<label for="last-name">Last Name</label>
 				<input type="text" name="lastName" id="last-name">
-				<label for="phone">Phone:</label>
-				<input type="text" name="phone" id="phone" placeholder="+251">
-				<label for="location">Location</label>
-				<input type="text" name="location" id="location">
-				<input type="checkbox" name="agree" id="agree"><p>I agree to recieve phone calls and/or messages about the transaction and agree to the Legend Books terms of service.</p>
+				<label for="phone">Phone *</label>
+				<input type="text" name="phone" id="phone" placeholder="+251" aria-describedby="phone-input-box" required>
+				<p id="phone-input-box">For Example: 0978877878</p>
+				<label for="location">Location *</label>
+				<input type="text" name="location" id="location" required>
+				<input type="checkbox" name="agree" id="agree" required>
+				<label for="agree">I agree to recieve phone calls and/or messages about the transaction and agree to the Legend Books terms of service. *</label>
 				<input type="submit" name="submit" value="Buy!">
 			</form>
 		</section>
