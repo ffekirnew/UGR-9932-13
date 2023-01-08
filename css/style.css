@@ -121,11 +121,14 @@ input, select {
 */
 
 .header {
+    display: flex;
     background-color: #68B984;
     color: #F0E9D2;
 }
 
 .logo {
+    display: inline-block;
+    width: 50%;
 }
 
 .logo__name {
@@ -144,6 +147,8 @@ input, select {
 }
 
 .navigation {
+    display: inline-block;
+    width: 50%;
     font-family: 'Sofia Sans Condensed', sans-serif;
 }
 
@@ -153,7 +158,10 @@ input, select {
 }
 
 .link--navigation {
+    float: left;
     font-size: 1.5rem;
+    padding: 0 0.5rem;
+    margin: 0.6rem auto;
 }
 
 .link--navigation:hover {
