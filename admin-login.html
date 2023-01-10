@@ -4,38 +4,42 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Legend Books admin login">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet">
 	<title>Legend Books Admin: Login</title>
 </head>
 <body>
-	<header>
-		<div>
-			<h1><a href="./index.html">Legend</a></h1>
+	<header class="header">
+		<div class="header__logo">
+			<h1><a href="./index.html" class="link link--logo fs-logo-header ff-primary fw-bold">Legend</a></h1>
 		</div>
-		<nav>
-			<ul>
-				<li><a href="./about.html">About</a></li>
-				<li><a href="./contact.html">Contact</a></li>
-				<li><a href="./admin-login.html">Admin Login</a></li>
+		<nav class="navigation">
+			<ul class="navigation__ul">
+				<li><a href="./about.html" class="link link--navigation">About</a></li>
+				<li><a href="./contact.html" class="link link--navigation">Contact</a></li>
+				<li><a href="./admin-login.html" class="link link--navigation">Admin Login</a></li>
 			</ul>
 		</nav>
 	</header>
-	<main>
-		<section>
+	<main class="main">
+		<section class="main__sign-in">
 			<div>
-				<h2>Login</h2>
-				<form action="./admin-booklist.html" method="GET">
-					<label for="user-name">User Name</label>
-					<input type="text" name="userName" id="user-name">
-					<label for="password">Password</label>
-					<input type="password" name="password" id="password">
-					<input type="submit" name="submit" value="Login!">
+				<h2 class="main__sign-in__title">Login</h2>
+				<form action="./admin-booklist.html" method="GET" class="form">
+					<label for="user-name" class="form__label">User Name</label>
+					<input type="text" name="userName" id="user-name" class="form__text-input">
+					<label for="password" class="form__label">Password</label>
+					<input type="password" name="password" id="password" class="form__text-input">
+					<input type="submit" name="submit" value="Login!" class="form__submit">
 				</form>
 			</div>
 		</section>
 	</main>
-	<footer>
-		<h2>Logo</h2>
-		<p>Designed By: Fikernew Birhanu</p>
+	<footer class="footer">
+		<h2 class="footer__logo">Logo</h2>
+		<p class="footer__body">Designed By: Fikernew Birhanu</p>
 	</footer>
 </body>
 </html>

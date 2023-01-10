@@ -4,24 +4,28 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Legend Books Ethiopia about page.">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet">
 	<title>Legend Books: Admin</title>
 </head>
 <body>
-	<header>
-		<div>
-			<h1><a href="./index.html">Legend</a></h1>
+	<header class="header">
+		<div class="header__logo">
+			<h1><a href="./index.html" class="link link--logo fs-logo-header ff-primary fw-bold">Legend</a></h1>
 		</div>
-		<nav>
-			<ul>
-				<li><a href="./about.html">About</a></li>
-				<li><a href="./contact.html">Contact</a></li>
-				<li><a href="./admin-login.html">Admin Login</a></li>
+		<nav class="navigation">
+			<ul class="navigation__ul">
+				<li><a href="./about.html" class="link link--navigation">About</a></li>
+				<li><a href="./contact.html" class="link link--navigation">Contact</a></li>
+				<li><a href="./admin-login.html" class="link link--navigation">Admin Login</a></li>
 			</ul>
 		</nav>
 	</header>
-	<main>
-		<section>
-			<video controls preload="metadata">
+	<main class="main">
+		<section class="main__about">
+			<video controls preload="metadata" class="main__about__video">
 				<source src="./videos/legend-books-about-videos.mp4" type="video/mp4">
 				<track
 					label="English"
@@ -30,40 +34,55 @@
 					src="./videos/legend-books-about-videos.vtt"
 					default />
 			  </video>
-			<div>
+			<div class="main__about__messages">
 				<ul>
-					<li><p><h2>Our Vision:</h2> is for everyone to have access to books that will enrich, improve, and change their lives by elevating their understanding of the world.</p></li>
-					<li><p><h2>Our Mission:</h2> is to provide people all over our beloved country who do not have access to books with the opportunity to read for learning, enjoyment, study, and lifelong learning.</p></li>
-					<li><p><h2>What we believe in:</h2> People gain power from books. They educate and inspire people to work toward a more equitable future. We have three different locations for our stores. Visit whichever is closest to you.</p></li>
-					<li><p><h2>How we give back:</h2> Across Ethiopia, for every book purchased by you, we give free books to local community and public schools.</p></li>
-					<li><p>Description 5</p></li>
+					<li>
+						<p class="main__about__messages__body"> 
+							<h2 class="main__about__messages__title">Our Vision:</h2> is for everyone to have access to books that will enrich, improve, and change their lives by elevating their understanding of the world.
+						</p>
+					</li>
+					<li>
+						<p class="main__about__messages__body">
+							<h2 class="main__about__messages__title">Our Mission:</h2> is to provide people all over our beloved country who do not have access to books with the opportunity to read for learning, enjoyment, study, and lifelong learning.
+						</p>
+					</li>
+					<li>
+						<p class="main__about__messages__body">
+							<h2 class="main__about__messages__title">What we believe in:</h2> People gain power from books. They educate and inspire people to work toward a more equitable future. We have three different locations for our stores. Visit whichever is closest to you.
+						</p>
+					</li>
+					<li>
+						<p class="main__about__messages__body">
+							<h2 class="main__about__messages__title">How we give back:</h2> Across Ethiopia, for every book purchased by you, we give free books to local community and public schools.
+						</p>
+					</li>
 				</ul>
 			</div>
 		</section>
-		<section>
-			<a href="./search.html">Browse Our Books!</a>
-			<a href="./contact.html">Book a meeting!</a>
+		<section class="main__about">
+			<a href="./search.html" class="link link--call-to-action">Browse Our Books!</a>
+			<a href="./contact.html" class="link link--call-to-action">Book a meeting!</a>
 		</section>
 	</main>
-	<footer>
-		<div>
+	<footer class="footer">
+		<div class="footer__logo">
 			<h3>Logo</h3>
 		</div>
-		<div>
-			<h3>Our Adresses</h3>
+		<div class="footer__addresses">
+			<h3 class="footer__title">Our Adresses</h3>
 			<ul>
-				<li>Bisrate Gabriel / Nfas Silk Lafto Subcity</li>
-				<li>4 Kilo / Arada Subcity</li>
-				<li>6 Kilo / Gulele Subcity</li>
+				<li class="footer__body">Bisrate Gabriel / Nfas Silk Lafto Subcity</li>
+				<li class="footer__body">4 Kilo / Arada Subcity</li>
+				<li class="footer__body">6 Kilo / Gulele Subcity</li>
 			</ul>
 		</div>
-		<div>
-			<h3>Our Socials</h3>
+		<div class="footer__socials">
+			<h3 class="footer__title">Our Socials</h3>
 			<ul>
-				<li><a href="#">FaceBook</a></li>
-				<li><a href="#">LinkedIn</a></li>
-				<li><a href="#">Instagram</a></li>
-				<li><a href="#">Twitter</a></li>
+				<li class="footer__body"><a href="#" class="link">FaceBook</a></li>
+				<li class="footer__body"><a href="#" class="link">LinkedIn</a></li>
+				<li class="footer__body"><a href="#" class="link">Instagram</a></li>
+				<li class="footer__body"><a href="#" class="link">Twitter</a></li>
 			</ul>
 		</div>
 	</footer>
