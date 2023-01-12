@@ -4,30 +4,40 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Atomic habit at Legend Books">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet">
 	<title>Atomic Habits</title>
 </head>
 <body>
-	<header>
-		<div>
-			<h1><a href="./index.html">Legend</a></h1>
+	<header class="header">
+		<div class="header__logo">
+			<h1><a href="./index.html" class="link link--logo fs-logo-header ff-primary fw-bold">Legend</a></h1>
 		</div>
-		<nav>
-			<ul>
-				<li><a href="./about.html">About</a></li>
-				<li><a href="./contact.html">Contact</a></li>
-				<li><a href="./admin-login.html">Admin Login</a></li>
+		<input type="checkbox" name="mobile-nav-toggle" id="mobile-nav-toggle" class="mobile-nav-toggle">
+		<nav class="navigation">
+			<ul class="navigation__ul">
+				<li><a href="./about.html" class="link link--navigation">About</a></li>
+				<li><a href="./contact.html" class="link link--navigation">Contact</a></li>
+				<li><a href="./admin-login.html" class="link link--navigation">Admin Login</a></li>
 			</ul>
 		</nav>
+		<label for="mobile-nav-toggle" class="mobile-nav-toggle-label">
+			<span class="mobile-nav-toggle-label__hamburger-lines mobile-nav-toggle-label__hamburger-lines--line-1"></span>
+			<span class="mobile-nav-toggle-label__hamburger-lines mobile-nav-toggle-label__hamburger-lines--line-2"></span>
+			<span class="mobile-nav-toggle-label__hamburger-lines mobile-nav-toggle-label__hamburger-lines--line-3"></span>
+		</label>
 	</header>
-	<main>
-		<section>
-			<div>
+	<main class="main">
+		<section class="main__book_description">
+			<div class="main__book_description__name">
 				<h2>Atomic Habits</h2>
 			</div>
-			<div>
+			<div class="main__book_description__cover_image">
 				<img src="./images/book-covers/atomic-habits-book-cover.webp" alt="Atomic Habits cover page">
 			</div>
-			<div>
+			<div class="main__book_description__detailed_description">
 				<h3>Description:</h3>
 				<ul>
 					<li>Book Name: <span>Atomic Habits</span></li>
@@ -42,13 +52,13 @@
 				</p>
 			</div>
 		</section>
-		<section>
+		<section class="main__audio_description">
 			<audio controls>
 				<source src="./audios/atomic-habits-short-description.mp3" type="audio/ogg">
-			  </audio>
-			<a href="./audios/atomic-habits-audio-summary-transcript.txt">Transcript</a>
+			</audio>
+			<a href="./audios/atomic-habits-audio-summary-transcript.txt" class="link link--audio_transcript">Transcript</a>
 		</section>
-		<section>
+		<section class="main__check_out">
 			<h2>Want to buy the item?</h2>
 			<form action="" method="POST">
 				<label for="first-name">First Name *</label>
@@ -66,25 +76,25 @@
 			</form>
 		</section>
 	</main>
-	<footer>
-		<div>
+	<footer class="footer">
+		<div class="footer__logo">
 			<h3>Logo</h3>
 		</div>
-		<div>
-			<h3>Our Adresses</h3>
+		<div class="footer__addresses">
+			<h3 class="footer__title">Our Adresses</h3>
 			<ul>
-				<li>Bisrate Gabriel / Nfas Silk Lafto Subcity</li>
-				<li>4 Kilo / Arada Subcity</li>
-				<li>6 Kilo / Gulele Subcity</li>
+				<li class="footer__body">Bisrate Gabriel / Nfas Silk Lafto Subcity</li>
+				<li class="footer__body">4 Kilo / Arada Subcity</li>
+				<li class="footer__body">6 Kilo / Gulele Subcity</li>
 			</ul>
 		</div>
-		<div>
-			<h3>Our Socials</h3>
+		<div class="footer__socials">
+			<h3 class="footer__title">Our Socials</h3>
 			<ul>
-				<li><a href="#">FaceBook</a></li>
-				<li><a href="#">LinkedIn</a></li>
-				<li><a href="#">Instagram</a></li>
-				<li><a href="#">Twitter</a></li>
+				<li class="footer__body"><a href="#" class="link">FaceBook</a></li>
+				<li class="footer__body"><a href="#" class="link">LinkedIn</a></li>
+				<li class="footer__body"><a href="#" class="link">Instagram</a></li>
+				<li class="footer__body"><a href="#" class="link">Twitter</a></li>
 			</ul>
 		</div>
 	</footer>
