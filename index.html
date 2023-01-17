@@ -33,10 +33,12 @@
 		<section class="main__search">
 			<h2 class="main__search__title">Legend Books is your only, full-stop source for all your book needs.</h2>
 			<p class="main__search__body">Search from our excusite list of over 5000+ books and pick what you want.</p>
+			<div class="error">
+			</div>
 			<form action="./search.html" method="GET" class="form">
-				<label for="search-box" class="form__label">Search Here:</label>
-				<input type="text" name="searchBox" id="search-box" class="form___text_input">
-				<button type="submit" name="submit" class="button button--submit">Search</button>
+				<label for="search-argument" class="form__label">Search Here:</label>
+				<input type="text" name="searchArgument" id="search-argument" class="form__text_input" required>
+				<input type="submit" name="submit" value="Search" class="button button--submit">
 			</form>
 		</section>
 		<section class="main__call-to-action">

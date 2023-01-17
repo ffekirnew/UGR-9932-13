@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet">
 	<title>Legend Books Admin: Login</title>
+	<script defer src="./js/login-validator.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -27,13 +28,16 @@
 		<section class="main__sign-in">
 			<div>
 				<h2 class="main__sign-in__title">Login</h2>
-				<form action="./admin-booklist.html" method="GET" class="form">
+				<form action="./admin-booklist.html" method="GET" class="form" id="form">
 					<label for="user-name" class="form__label">User Name</label>
-					<input type="text" name="userName" id="user-name" class="form__text_input">
+					<input type="text" name="userName" id="user-name" class="form__text_input" required>
 					<label for="password" class="form__label">Password</label>
-					<input type="password" name="password" id="password" class="form__text_input">
-					<input type="submit" name="submit" value="Login!" class="button button--submit">
+					<input type="password" name="password" id="password" class="form__text_input" required>
+					<input type="submit" name="submit" id="submit" value="Login!" class="button button--submit">
 				</form>
+				<div class="error" id="error">
+					<p class="error__body"></p>
+				</div>
 			</div>
 		</section>
 	</main>

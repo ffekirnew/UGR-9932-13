@@ -58,13 +58,12 @@ body {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  bg-rendering: optimizeSpeed;
-  linbackground-color-height: 1.5;
+  text-rendering: optimizeSpeed;
 }
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  bg-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 background-color/* Make images easier to work with */
 img,
@@ -92,6 +91,11 @@ picture {
 /*
  * MY STYLE RULES START HERE
  */
+
+ body {
+   max-width: 1445px;
+   margin: auto;
+ }
 
  section {
    padding: 2% 15%;
@@ -195,7 +199,30 @@ picture {
       text-decoration: underline;
       text-underline-offset: 0.8rem;
    }
-} 
+
+   .main {
+      position: static;
+   }
+}
+
+/*Laptop Large Devices*/
+@media (min-width: 1441px){
+   .main__search {
+      position: relative;
+      text-align: center;
+   }
+   .main__search label {
+      display: none;
+   }
+   .main__search form {
+      width: 30%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      position: absolute;
+      top: -50px;
+      right: 0;
+   }
+}
 
  .link {
     text-decoration: none;
@@ -225,22 +252,38 @@ picture {
  .main {
    position: relative;
    top: 7%;
+   background-color: var(--clr-secondary);
    font-family: var(--ff-secondary);
+   text-align: center;
  }
 
  @media (min-width: 1025px) {
-   .main {
-      position: static;
+   .header {
+      position: unset;
    }
 
-   .main section {
-      padding: 2% 14%;
+   .navigation {
+      position: unset;
+   }
+
+   .main {
+      position: static;
+      top: unset;
    }
  }
 
  .main__search {
-    background-color: var(--clr-secondary);
-    color: var(--clr-accent-primary);
+   background-color: var(--clr-primary);
+   color: var(--clr-accent-tertiary);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .main__search form {
+   display: block;
+   width: 60%;
  }
 
  .main__search__title {
@@ -255,8 +298,17 @@ picture {
     margin: 0 0.5rem 0.5rem;
  }
 
+.main__search form {
+   width: 80%;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0.3rem;
+   justify-content: center;
+   text-align: center;
+   align-content: flex-start;
+}
+
  .form {
-   width: 60%;
    font-size: var(--fs-body);
  }
 
@@ -550,7 +602,7 @@ picture {
  }
 
 .next_destinations {
-   margin: 0 50%;
+   display: grid;
 }
 
 .next_destinations__title {
@@ -559,8 +611,8 @@ picture {
 }
 
 .next_destinations__ul {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   display: flex;
+   flex-wrap: wrap;
 }
 
 .link--next_destinations {
@@ -670,6 +722,8 @@ picture {
 }
 
 .footer {
+   position: relative;
+   top: 7%;
     background-color: var(--clr-primary);
     color: var(--clr-accent-primary);
     font-family: var(--ff-primary);
@@ -678,6 +732,7 @@ picture {
 
 @media (min-width: 768px) {
    .footer {
+      position: static;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       align-items: center;
