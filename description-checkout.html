@@ -59,20 +59,20 @@
 			<a href="./audios/atomic-habits-audio-summary-transcript.txt" class="link link--audio_transcript">Transcript</a>
 		</section>
 		<section class="main__check_out">
-			<h2>Want to buy the item?</h2>
-			<form action="" method="POST">
-				<label for="first-name">First Name *</label>
+			<h2 class="main__check_out__title">Want to buy the item?</h2>
+			<form action="" method="POST" class="form form--check_out">
+				<label for="first-name" class="label label--check_out__first_name">First Name *</label>
 				<input type="text" name="firstName" id="first-name" required>
-				<label for="last-name">Last Name</label>
+				<label for="last-name" class="label label--check_out__last_name">Last Name</label>
 				<input type="text" name="lastName" id="last-name">
-				<label for="phone">Phone *</label>
+				<label for="phone" class="label label--check_out__phone">Phone *</label>
 				<input type="text" name="phone" id="phone" placeholder="+251" aria-describedby="phone-input-box" required>
-				<p id="phone-input-box">For Example: 0978877878</p>
-				<label for="location">Location *</label>
+				<p id="phone-input-box"  class="label label--check_out__phone_guide">For Example: 0978877878</p>
+				<label for="location" class="label label--check_out__loaction">Location *</label>
 				<input type="text" name="location" id="location" required>
 				<input type="checkbox" name="agree" id="agree" required>
-				<label for="agree">I agree to recieve phone calls and/or messages about the transaction and agree to the Legend Books terms of service. *</label>
-				<input type="submit" name="submit" value="Buy!">
+				<label for="agree" class="label label--check_out__agree">I agree to recieve phone calls and/or messages about the transaction and agree to the Legend Books terms of service. *</label>
+				<input type="submit" name="submit" value="Buy!" class="button button--check_out_submit">
 			</form>
 		</section>
 	</main>
