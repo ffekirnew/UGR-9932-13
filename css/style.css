@@ -700,11 +700,18 @@ picture {
    margin: auto;
    display: grid;
    grid-template-columns: 1fr 1fr;
+   gap: 0.5rem;
+   margin: 0.1rem auto;
 }
 
 .label--check_out__phone_guide {
    grid-column: 1 / 3;
    text-align: center;
+}
+
+.checkbox {
+   width: 40px;
+   margin: auto;
 }
 
 .button--check_out_submit {
