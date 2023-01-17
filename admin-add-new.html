@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet">
 	<title>Legend Books Admin: Add New</title>
+	<script defer src="./js/add-new-validator.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -29,22 +30,24 @@
 			<span class="mobile-nav-toggle-label__hamburger-lines mobile-nav-toggle-label__hamburger-lines--line-3"></span>
 		</label>
 	</header>
-	<main>
+	<main class="main">
 		<section class="admin__add_new">
 			<h2 class="admin__add_new__title">Add New Books</h2>
-			<form action="" class="form">
+			<form action="./" method="GET" class="form" id="form">
 				<label for="book-name" class="form__label">Book Name</label>
-				<input type="text" name="bookName" id="book-name" class="form__text_input">
+				<input type="text" name="bookName" id="book-name" class="form__text_input" required>
 				<label for="author-name" class="form__label">Author Name</label>
-				<input type="text" name="authorName" id="author-name" class="form__text_input">
+				<input type="text" name="authorName" id="author-name" class="form__text_input" required>
 				<label for="isbn" class="form__label">ISBN</label>
-				<input type="text" name="isbn" id="isbn" class="form__text_input">
+				<input type="text" name="isbn" id="isbn" class="form__text_input" required>
 				<label for="book-cover" class="form__label">Book Cover</label>
-				<input type="file" name="authorName" id="book-cover" alt="image" class="form__text_input">
+				<input type="file" name="authorName" id="book-cover" alt="image" class="form__text_input" required>
 				<label for="price" class="form__label">Price</label>
 				<input type="text" name="authorName" id="price" class="form__text_input">
-				<input type="submit" name="submit" alt="a form to add a new book" value="Add!" class="button button--submit">
+				<input type="submit" name="submit" alt="a form to add a new book" value="Add!" class="button button--submit" required>
 			</form>
+			<div class="error">
+			</div>
 		</section>
 	</main>
 	<footer class="footer">

@@ -255,6 +255,7 @@ picture {
    background-color: var(--clr-secondary);
    font-family: var(--ff-secondary);
    text-align: center;
+   min-height: 77vh;
  }
 
  @media (min-width: 1025px) {
@@ -603,6 +604,9 @@ picture {
 
 .next_destinations {
    display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   align-items: center;
+   justify-content: center;
 }
 
 .next_destinations__title {
@@ -703,12 +707,21 @@ picture {
    font-family: var(--ff-secondary);
 }
 
+.admin__add_new a {
+   color: var(--clr-accent-secondary);
+   text-decoration: none;
+   font-size: var(--fs-body);
+}
+
 .admin__add_new__title {
    font-size: var(--fs-body-header);
    font-weight: var(--fw-semi-bold);
+   color: var(--clr-accent-primary);
+   margin: 1.5rem 0;
 }
 
 .admin__add_new form {
+   color: var(--clr-accent-primary);
    display: flex;
    width: 50%;
    margin: auto;
@@ -718,7 +731,7 @@ picture {
 }
 
 .admin__add_new input {
-   margin: 0.2rem auto;
+   margin: 0.3rem auto;
 }
 
 .footer {

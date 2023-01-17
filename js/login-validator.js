@@ -18,12 +18,12 @@ form.addEventListener("submit", e => {
     }
 
     if (password.value.length < 8) {
-        messages.push("Password length must be greater or equal to 8")
+        messages.push("Password length must be greater or equal to 8");
     }
-    
-    if (messages != []) {
+
+    if (messages) {
         e.preventDefault();
-        errorElement.innerHTML = messages.join(", ")
+        errorElement.innerHTML = messages.join(", ");
     }
 })
 
