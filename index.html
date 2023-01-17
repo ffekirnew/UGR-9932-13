@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet">
 	<title>Legend Books</title> 
+	<script defer src="./js/search-validator.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -35,11 +36,12 @@
 			<p class="main__search__body">Search from our excusite list of over 5000+ books and pick what you want.</p>
 			<div class="error">
 			</div>
-			<form action="./search.html" method="GET" class="form">
+			<form action="./search.html" method="GET" class="form" id="form">
 				<label for="search-argument" class="form__label">Search Here:</label>
 				<input type="text" name="searchArgument" id="search-argument" class="form__text_input" required>
 				<input type="submit" name="submit" value="Search" class="button button--submit">
 			</form>
+			<div id="error"></div>
 		</section>
 		<section class="main__call-to-action">
 			<p class="main__call-to-action__body">Choose from tens of thousands of excellent books and digital items in our inventory for rapid delivery. For individuals looking for the best textbooks, novels, or poetry books, we host the best books, offer an intuitive online store, and are the ideal location. Along with our local stores, we now host more than 5,000 children's book titles on our online site. Browse the kid's area or perform a keyword search.</p>

@@ -11,14 +11,13 @@ form.addEventListener("submit", (e) => {
 
     let alphaRegexPattern = /[^a-z]/i;
     let isbnRegexPattern = /^(?:ISBN(?:-1[03])?:? )?(?=[0-9X]{10}$|(?=(?:[0-9]+[- ]){3})[- 0-9X]{13}$)[0-9]{1,5}[- ]?[0-9]+[- ]?[0-9]+[- ]?[0-9X]$/;
-    let priceRegexPattern = /^\d+(?:\.\d{1,2})?$/;
+    let priceRegexPattern = /[^0-9_]/i;
 
-    console.log(alphaRegexPattern.test(bookName.value));
     if (alphaRegexPattern.test(bookName.value)) {
         messages.push("Book name can only contain the alphabet.");
     }
 
-    if (alphaRegexPattern.test(authorName)) {
+    if (alphaRegexPattern.test(authorName.value)) {
         messages.push("Author name should only contain alphabets")
     }
 
@@ -26,15 +25,14 @@ form.addEventListener("submit", (e) => {
         messages.push("ISBN should be in the standard manner.");
     }
 
+    console.log(price.value);
     if (priceRegexPattern.test(price.value)) {
-        messages.push("Price should only contain money charachters.");
+        messages.push("Price needs to be a valid price.");
     }
 
-    if (messages) {
+    if (messages.length > 0) {
         e.preventDefault();
         errorElement.innerHTML = messages.join(", ");
-        console.log(messages);
-        console.log(errorElement.innerHTML);
     }
 
 })

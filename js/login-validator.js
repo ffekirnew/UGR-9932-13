@@ -12,7 +12,6 @@ const errorElement = document.getElementById("error")
 form.addEventListener("submit", e => {
     let messages = [];
 
-    console.log(userName.value)
     if (isAlphanumericAndUnderscore(userName.value)) {
         messages.push("Usernames can only contain the alphabet, numbers and the underscore");
     }
@@ -21,7 +20,7 @@ form.addEventListener("submit", e => {
         messages.push("Password length must be greater or equal to 8");
     }
 
-    if (messages) {
+    if (messages.length > 0) {
         e.preventDefault();
         errorElement.innerHTML = messages.join(", ");
     }

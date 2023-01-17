@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet">
 	<title>Legend Books: Contacts</title>
+	<script defer src="./js/mailing-list-validator.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -52,18 +53,16 @@
 		</section>
 		<section class="main__mailing-list">
 			<h2 class="main__mailing-list__title">Get Added to our mailing list!</h2>
-			<form action="./" method="POST" class="form">
+			<form action="./" method="POST" class="form" id="form">
 				<label for="first-name" class="form__label">First Name:</label>
-				<input type="text" name="firstName" id="first-name" class="form__text_input">
-				<br>
+				<input type="text" name="firstName" id="first-name" class="form__text_input" required>
 				<label for="last-name" class="form__label">Last Name:</label>
-				<input type="text" name="lastName" id="last-name" class="form__text_input">
-				<br>
+				<input type="text" name="lastName" id="last-name" class="form__text_input" required>
 				<label for="email" class="form__label">Email Name:</label>
-				<input type="email" name="email" id="email" class="form__text_input">
-				<br>
-				<input type="submit" name="submit" value="Add Me!" class="button button--submit>
+				<input type="email" name="email" id="email" class="form__text_input" required>
+				<input type="submit" name="submit" id="submit" value="Add Me!" class="button button--submit button--mailing-list">
 			</form>
+			<div id="error"></div>
 		</section>
 	</main>
 	<footer class="footer">
