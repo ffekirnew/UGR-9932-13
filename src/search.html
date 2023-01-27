@@ -4,30 +4,26 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Legend Books Ethiopia search page">
-	<link rel="stylesheet" href="./css/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 	<title>Legend Books: Search Our Books</title>
 </head>
 <body>
-	<header class="header">
-		<div class="header__logo">
-			<h1><a href="./index.html" class="link link--logo fs-logo-header ff-primary fw-bold">Legend</a></h1>
-		</div>
-		<input type="checkbox" name="mobile-nav-toggle" id="mobile-nav-toggle" class="mobile-nav-toggle">
-		<nav class="navigation">
-			<ul class="navigation__ul">
-				<li><a href="./about.html" class="link link--navigation">About</a></li>
-				<li><a href="./contact.html" class="link link--navigation">Contact</a></li>
-				<li><a href="./admin-login.html" class="link link--navigation">Admin Login</a></li>
-			</ul>
+	<header class="container-fluid bg-primary px-5">
+		<nav class="navbar navbar-expand-md navbar-dark bg-primary w-75 text-center m-auto">
+			<div class="navbar-brand">
+				<h1 class="text-uppercase"><a href="./index.html" class="display-4 text-white text-decoration-none">Legend</a></h1>
+			</div>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle Navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a href="./about.html" class="nav-link fs-4 mx-2 text-uppercase">About</a></li>
+					<li class="nav-item"><a href="./contact.html" class="nav-link fs-4 mx-2 text-uppercase">Contact</a></li>
+					<li class="nav-item"><a href="./admin-login.html" class="nav-link fs-4 mx-2 text-uppercase">Admin Login</a></li>
+				</ul>
+			</div>
 		</nav>
-		<label for="mobile-nav-toggle" class="mobile-nav-toggle-label">
-			<span class="mobile-nav-toggle-label__hamburger-lines mobile-nav-toggle-label__hamburger-lines--line-1"></span>
-			<span class="mobile-nav-toggle-label__hamburger-lines mobile-nav-toggle-label__hamburger-lines--line-2"></span>
-			<span class="mobile-nav-toggle-label__hamburger-lines mobile-nav-toggle-label__hamburger-lines--line-3"></span>
-		</label>
 	</header>
 	<main class="main">
 		<section class="main__search_box">
@@ -76,27 +72,30 @@
 			</div>
 		</section>
 	</main>
-	<footer class="footer">
-		<div class="footer__logo">
-			<h3>Legend Books</h3>
-		</div>
-		<div class="footer__addresses">
-			<h3 class="footer__title">Our Adresses</h3>
-			<ul>
-				<li class="footer__body">Bisrate Gabriel / Nfas Silk Lafto Subcity</li>
-				<li class="footer__body">4 Kilo / Arada Subcity</li>
-				<li class="footer__body">6 Kilo / Gulele Subcity</li>
-			</ul>
-		</div>
-		<div class="footer__socials">
-			<h3 class="footer__title">Our Socials</h3>
-			<ul>
-				<li class="footer__body"><a href="#" class="link">FaceBook</a></li>
-				<li class="footer__body"><a href="#" class="link">LinkedIn</a></li>
-				<li class="footer__body"><a href="#" class="link">Instagram</a></li>
-				<li class="footer__body"><a href="#" class="link">Twitter</a></li>
-			</ul>
+	<footer class="container-fluid p-5 bg-primary">
+		<div class="w-75 text-white text-center row m-auto">
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<h3>Legend Books</h3>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<h3 class="footer__title">Our Adresses</h3>
+				<ul  style="list-style: none;">
+					<li class="">Bisrate Gabriel / Nfas Silk Lafto Subcity</li>
+					<li class="">4 Kilo / Arada Subcity</li>
+					<li class="">6 Kilo / Gulele Subcity</li>
+				</ul>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<h3 class="">Our Socials</h3>
+				<ul style="list-style: none;" class="">
+					<li class=""><a href="#" class="nav-link">FaceBook</a></li>
+					<li class=""><a href="#" class="nav-link">LinkedIn</a></li>
+					<li class=""><a href="#" class="nav-link">Instagram</a></li>
+					<li class=""><a href="#" class="nav-link">Twitter</a></li>
+				</ul>
+			</div>
 		</div>
 	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

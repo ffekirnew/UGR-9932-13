@@ -10,24 +10,24 @@
 </head>
 <body>
 	<header class="container-fluid bg-primary px-5">
-		<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+		<nav class="navbar navbar-expand-md navbar-dark bg-primary w-75 text-center m-auto">
 			<div class="navbar-brand">
-				<h1><a href="./index.html" class="display-4 text-white">Legend</a></h1>
+				<h1 class="text-uppercase"><a href="./index.html" class="display-4 text-white text-decoration-none">Legend</a></h1>
 			</div>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle Navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
 				<ul class="navbar-nav">
-					<li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
-					<li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
-					<li class="nav-item"><a href="./admin-login.html" class="nav-link">Admin Login</a></li>
+					<li class="nav-item"><a href="./about.html" class="nav-link fs-4 mx-2 text-uppercase">About</a></li>
+					<li class="nav-item"><a href="./contact.html" class="nav-link fs-4 mx-2 text-uppercase">Contact</a></li>
+					<li class="nav-item"><a href="./admin-login.html" class="nav-link fs-4 mx-2 text-uppercase">Admin Login</a></li>
 				</ul>
 			</div>
 		</nav>
 	</header>
-	<main>
-		<section class="container-fluid bg-secondary p-5 text-light">
+	<main class="bg-primary">
+		<section class="container-fluid p-5 text-light">
 			<h2 class="display-6 text-center">Legend Books is your only, full-stop source for all your book needs.</h2>
 			<p class="display-7 text-center">Search from our excusite list of over 5000+ books and pick what you want.</p>
 			<div class="error">
@@ -35,17 +35,17 @@
 			<form action="./search.html" method="GET" class="form row g-3 justify-content-center align-center pt-5" id="form">
 				<div class="col-auto"><label for="search-argument" class="form-label">Search Here:</label></div>
 				<div class="col-auto"><input type="text" name="searchArgument" id="search-argument" class="form-control" required></div>
-				<div class="col-auto"><input type="submit" name="submit" value="Search" class="btn btn-primary"></div>
+				<div class="col-auto"><input type="submit" name="submit" value="Search" class="btn btn-light"></div>
 			</form>
 			<div id="error" class="text-danger text-center"></div>
 		</section>
-		<section class="container-fluid bg-primary p-5 text-light">
+		<section class="container-fluid bg-secondary p-5 text-light text-center">
 			<p class="display-8">Choose from tens of thousands of excellent books and digital items in our inventory for rapid delivery. For individuals looking for the best textbooks, novels, or poetry books, we host the best books, offer an intuitive online store, and are the ideal location. Along with our local stores, we now host more than 5,000 children's book titles on our online site. Browse the kid's area or perform a keyword search.</p>
 			<a href='search.html' class="btn btn-warning">Browse</a>
 		</section>
-		<section class="container-fluid bg-secondary p-5 text-light text-center">
+		<section class="container-fluid bg-info p-5 text-light text-center">
 			<h2 class="display-6 text-center pb-5">Our Providers</h2>
-			<ul class="row justify-content-center">
+			<ul class="row justify-content-center"  style="list-style: none;">
 				<li class="col-sm-6 col-md-4 col-lg-3"><img src="./images/publishers/aster-nega.jpeg" width="150px" height="150px" alt="Aster Nega Publishers Logo"></li>
 				<li class="col-sm-6 col-md-4 col-lg-3"><img src="./images/publishers/birhan-ena-selam.jpeg" width="150px" height="150px" alt="Birhan ena Selam Publishers Logo"></li>
 				<li class="col-sm-6 col-md-4 col-lg-3"><img src="./images/publishers/mega-publisher.png" width="150px" height="150px" alt="Mega Publishers Logo"></li>
@@ -53,26 +53,28 @@
 			</ul>
 		</section>
 	</main>
-	<footer class="container-fluid p-5 bg-primary text-white text-center row">
-		<div class="col-sm-12 col-md-6 col-lg-4">
-			<h3>Legend Books</h3>
-		</div>
-		<div class="col-sm-12 col-md-6 col-lg-4">
-			<h3 class="footer__title">Our Adresses</h3>
-			<ul>
-				<li class="footer__body">Bisrate Gabriel / Nfas Silk Lafto Subcity</li>
-				<li class="footer__body">4 Kilo / Arada Subcity</li>
-				<li class="footer__body">6 Kilo / Gulele Subcity</li>
-			</ul>
-		</div>
-		<div class="col-sm-12 col-md-6 col-lg-4">
-			<h3 class="footer__title">Our Socials</h3>
-			<ul>
-				<li class="footer__body"><a href="#" class="link">FaceBook</a></li>
-				<li class="footer__body"><a href="#" class="link">LinkedIn</a></li>
-				<li class="footer__body"><a href="#" class="link">Instagram</a></li>
-				<li class="footer__body"><a href="#" class="link">Twitter</a></li>
-			</ul>
+	<footer class="container-fluid p-5 bg-primary">
+		<div class="w-75 text-white text-center row m-auto">
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<h3>Legend Books</h3>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<h3 class="footer__title">Our Adresses</h3>
+				<ul  style="list-style: none;">
+					<li class="">Bisrate Gabriel / Nfas Silk Lafto Subcity</li>
+					<li class="">4 Kilo / Arada Subcity</li>
+					<li class="">6 Kilo / Gulele Subcity</li>
+				</ul>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<h3 class="">Our Socials</h3>
+				<ul style="list-style: none;" class="">
+					<li class=""><a href="#" class="nav-link">FaceBook</a></li>
+					<li class=""><a href="#" class="nav-link">LinkedIn</a></li>
+					<li class=""><a href="#" class="nav-link">Instagram</a></li>
+					<li class=""><a href="#" class="nav-link">Twitter</a></li>
+				</ul>
+			</div>
 		</div>
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
