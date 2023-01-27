@@ -6,6 +6,7 @@
 	<meta name="description" content="Legend Books Ethiopia search page">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 	<title>Legend Books: Search Our Books</title>
+	<script defer src="./js/index.js"></script>
 </head>
 <body>
 	<header class="container-fluid bg-primary px-5">
@@ -25,34 +26,35 @@
 			</div>
 		</nav>
 	</header>
-	<main class="main">
-		<section class="main__search_box">
-			<form action="" method="GET" class="form">
-				<label for="search-argument" class="form__label">Search Here:</label>
-				<input type="text" name="searchArgument" id="search-argument" class="form__text_input">
-				<buton type="submit" name="submit" value="Search" class="button button--submit">Search</buton>
+	<main class="text-center">
+		<section class="container-fluid bg-primary p-3">
+			<form action="./search.html" method="GET" class="form row g-3 justify-content-center align-center pt-5 needs-validation" id="form" novalidate>
+				<div class="col-auto"><label for="search-argument" class="form-label">Search Here:</label></div>
+				<div class="col-auto"><input type="text" name="searchArgument" id="search-argument" class="form-control" required></div>
+				<div class="col-auto"><input type="submit" name="submit" value="Search" class="btn btn-light"></div>
+				<div class="invalid-feedback">Search cannot be empty.</div>
 			</form>
 		</section>
-		<section class="main__results">
+		<section class="container row justify-content-center p-5 m-auto">
 			<div class="main__results__filtering">
 				<h2 class="main__results__filtering__title">Filtering Options:</h2>
-				<ul>
+				<ul style="list-style: none;">
 					<li><a href="#" class="link">Under Price ETB200</a></li>
 					<li><a href="#" class="link">Top Rates</a></li>
 					<li><a href="#" class="link">Most Popular</a></li>
 				</ul>
 			</div>
 			<div class="main__results__table">
-				<table class="table">
-					<thead>
-						<th class="table__th">Book Name</th>
-						<th class="table__th">Writer Name</th>
-						<th class="table__th">Category</th>
-						<th class="table__th">Price</th>
+				<table class="table table-striped">
+					<thead class="table-dark">
+						<th>Book Name</th>
+						<th>Writer Name</th>
+						<th>Category</th>
+						<th>Price</th>
 					</thead>
 					<tbody>
 						<tr>
-							<td class="table__td"><a href="./description-checkout.html" class="link link--book">Atomic Habits</a></td>
+							<td class="table__td"><a href="./description-checkout.html">Atomic Habits</a></td>
 							<td class="table__td">James Clear</td>
 							<td class="table__td">Personal Developement</td>
 							<td class="table__td">ETB200</td>
@@ -62,12 +64,12 @@
 			</div>
 			<div class="next_destinations">
 				<h3 class="next_destinations__title">Next Pages:</h3>
-				<ul class="next_destinations__ul">
-					<li><a href="#" class="link link--next_destinations">1</a></li>
-					<li><a href="#" class="link link--next_destinations">2</a></li>
-					<li><a href="#" class="link link--next_destinations">3</a></li>
-					<li>...</li>
-					<li><a href="#" class="link link--next_destinations">100</a></li>
+				<ul class="container-fluid row m-auto justify-content-center" style="list-style: none;">
+					<li class="col-auto"><a href="#" class="navbar-link">1</a></li>
+					<li class="col-auto"><a href="#" class="navbar-link">2</a></li>
+					<li class="col-auto"><a href="#" class="navbar-link">3</a></li>
+					<li class="col-auto">...</li>
+					<li class="col-auto"><a href="#" class="navbar-link">100</a></li>
 				</ul>
 			</div>
 		</section>
